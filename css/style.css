@@ -8,15 +8,16 @@ nav {
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     background-color: #f8f9fa;
     position: sticky;
     top: 0;
 }
 
 nav h1{
-    font-size: 30px;
-    margin-right: 343px;
+    padding: -20px;
+    font-size: 20px;
+    margin-right: 390px;
     margin-left: 0px;
 }
 
