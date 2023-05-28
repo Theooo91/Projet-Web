@@ -57,7 +57,7 @@ nav{
   }
   nav h1{
     font-size: 30px;
-    margin-right: 450px;
+    margin-right: 343px;
     margin-left: 0px;
   }
   nav .onglets{
@@ -67,7 +67,7 @@ nav{
   nav .onglets a, 
   nav .onglets p{
     font-size: 20px;
-    margin-right: 10px;
+    margin-right: 35px;
     cursor:pointer;
     text-decoration: none;
     color: black;
