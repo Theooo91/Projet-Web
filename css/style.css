@@ -4,48 +4,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/*nav{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #fff;
-    position: sticky;
-    top: 0;
-  }
-  nav h1{
-    font-size: 20px;
-  }
-  nav .onglets{
-    display: flex;
-    flex-wrap:wrap;
-  }
-  nav .onglets p,nav .onglets a{
-    font-size: 17px;
-    margin-right: 10px;
-    cursor:pointer;
-  }
-  nav .onglets input{
-    margin: 8px 20px;
-    padding: 15px;
-    border-radius: 30px;
-    border:none;
-    background-color: #f2f2f2;
-    outline:none;
-  }
-
-  nav .onglets a {
-    text-decoration: none;
-    position: relative;
-    top: 20px;
-  }*/
-
-
-
-
-
-
-
 nav{
     display:flex;
     flex-wrap:wrap;
@@ -99,20 +57,8 @@ nav{
 
 
 
-/*nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #f8f9fa;
-}
-nav .onglets a, nav .onglets p {
-    margin: 0 15px;
-    text-decoration: none;
-    color: black;
-}
 
-footer {
+/*footer {
     display: flex;
     justify-content: center;
     align-items: center;
