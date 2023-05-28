@@ -4,26 +4,29 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-nav{
+nav {
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
     padding: 20px;
-    background-color: #fff;
+    background-color: #f8f9fa;
     position: sticky;
     top: 0;
-  }
-  nav h1{
+}
+
+nav h1{
     font-size: 30px;
     margin-right: 343px;
     margin-left: 0px;
-  }
-  nav .onglets{
+}
+
+nav .onglets{
     display: flex;
     flex-wrap:wrap;
-  }
-  nav .onglets a, 
-  nav .onglets p{
+}
+
+nav .onglets a, 
+nav .onglets p{
     font-size: 20px;
     margin-right: 35px;
     cursor:pointer;
@@ -32,22 +35,27 @@ nav{
     justify-content: rigth;
     position: relative;
     top: -4px;
-  }
+}
   
-  nav .onglets input{
+nav .onglets input{
     margin: 8px 20px;
     padding: 15px;
     border-radius: 30px;
     border:none;
     background-color: #f2f2f2;
     outline:none;
-  }
+}
 
-  nav .onglets a {
+nav .onglets a {
     text-decoration: none;
     position: relative;
     top: 16px;
-  }
+}
+
+
+
+
+
 
 
 
