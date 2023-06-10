@@ -19,7 +19,7 @@ nav {
 nav h1{
     padding: -20px;
     font-size: 20px;
-    margin-right: 390px;
+    margin-right: 376px;
     margin-left: 0px;
 }
 
@@ -92,10 +92,6 @@ nav .favoris p{
     content: ""; /* Supprime la barre "|" avant le premier lien */
   }
   
-  .contact a:hover {
-    color: #FF0000;
-  }
-  
   .contact a::after {
     content: "";
     display: block;
@@ -133,6 +129,11 @@ header h1{
 
 }
 
+header p{
+    font-size: 20px;
+    margin-top: -10px;
+}
+
 header button{
     padding: 15px 20px;
     font-size: 20px;
@@ -140,7 +141,111 @@ header button{
     border-radius: 30px;
     outline:none;
     cursor:pointer;
+    background-color: #000;
+    color: #f2f2f2;
 }
+
+/* ------------------------------------------------------------------------------------------------ */
+/* SECTION */
+
+/* Image pour aller dans les autres pages */
+.image-shop {
+    display: flex;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 15px;
+    gap: 60px;
+    margin-top: 100px;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.image-shop a {
+    position: relative;
+    display: inline-block;
+}
+
+.image-shop a img {
+    transition: filter 0.3s ease;
+}
+
+.image-shop a:hover img {
+    filter: brightness(60%);
+}
+
+
+ /* Inscription à la Newsletter*/
+  .newsletter{
+    background: url(bg.jpg) no-repeat center;
+    padding: 80px 40px;
+    text-align: center;
+    color: rgb(7, 6, 6);
+    background-color: #f2f2f2;
+  }
+  .newsletter p {
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .email{
+    height: 40px;
+    justify-content: center;
+    display: flex; 
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 30px;
+
+  }
+  .email i{
+    background: #090a0b;
+    width: 40px;
+    line-height: 40px;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 30px;
+  }
+  .tbox,.btn{
+    border: none;
+    outline: none;
+  }
+  .tbox{
+    width: 0px;
+    transition: 0.6s;
+  }
+  .email:hover > .tbox,.tbox:focus{
+    width: 260px;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 30px;
+  }
+  .btn{
+    background: #0f1011;
+    color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 30px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ------------------------------------------------------------------------------------------------- */
 /* FOOTER */
