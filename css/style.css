@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 body {
     margin:0px;
     padding: 0px;
@@ -19,7 +21,7 @@ nav {
 nav h1{
     padding: -20px;
     font-size: 20px;
-    margin-right: 376px;
+    margin-right: 336px;
     margin-left: 0px;
 }
 
@@ -147,10 +149,11 @@ header button{
 
 /* Photo pour décorer la page */
 .photo_deco{
-    display: flex;
-    margin-top: 11px;
-    gap: 11px;
+  display: flex;
+  margin-top: 11px;
+  gap: 11px;
 }
+
 
 /* ------------------------------------------------------------------------------------------------ */
 /* SECTION */
@@ -181,7 +184,7 @@ header button{
 
 /* Petite phrase en dessous des liens photos */
 .phrase{
-    color: #333;
+    color: #C0BFC2;
     text-align: center;
 }
 
@@ -189,35 +192,40 @@ header button{
  /* Inscription à la Newsletter*/
   .newsletter{
     background: url(bg.jpg) no-repeat center;
-    padding: 80px 40px;
+    padding: 60px 40px;
     text-align: center;
     color: rgb(7, 6, 6);
     background-color: #f2f2f2;
-    margin-top: 100px;
+    margin-top: 60px;
   }
   .newsletter p {
-    max-width: 600px;
-    margin: 40px auto;
+    max-width: 900px;
+    margin: 10px auto;
     font-size: 15px;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
+    margin-top: -10px;
+    color: #333;
   }
+
+  .newsletter h1 {
+    font-size: 30px;
+  }
+
+
   .email{
     height: 40px;
     justify-content: center;
     display: flex; 
-    padding: 15px 20px;
-    font-size: 20px;
-    border-radius: 30px;
+    margin-top: 70px;
+
 
   }
   .email i{
     background: #090a0b;
     width: 40px;
     line-height: 40px;
-    padding: 15px 20px;
-    font-size: 20px;
-    border-radius: 30px;
+
   }
   .tbox,.btn{
     border: none;
@@ -229,21 +237,18 @@ header button{
   }
   .email:hover > .tbox,.tbox:focus{
     width: 260px;
-    padding: 15px 20px;
-    font-size: 20px;
-    border-radius: 30px;
   }
   .btn{
     background: #0f1011;
     color: white;
     padding: 0 10px;
     text-transform: uppercase;
-    cursor: pointer;
-    padding: 15px 20px;
-    font-size: 20px;
-    border-radius: 30px;
   }
   
+  /* Phrase de fin de section */
+  .marque{
+    
+  }
 
 
 
