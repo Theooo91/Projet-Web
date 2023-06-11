@@ -593,6 +593,7 @@ footer {
 
 /* ----------------------------------------------------------------------------------------------- */
 /* Page Succes et Echec */
+/* Succès */
 .succes {
   width: 100%;
   height: 100vh;
@@ -623,7 +624,31 @@ footer {
   font-weight: 500;
   background: #f2f2f2;
   text-decoration: none;
+  margin-top: 10px;
 
+}
+
+/* Echec */
+.echec {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.echec img {
+  width: 200px;
+  margin: 2rem 0;
+}
+
+.echec h1 {
+  font-size: 60px;
+}
+
+.echec p{
+  margin-top: -20px;
 }
 
 
