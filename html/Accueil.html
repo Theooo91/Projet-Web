@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="../css/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
     </head>
     
     <body>
@@ -21,19 +22,48 @@
                     <input type="search" placeholder="Rechercher">
                 </form>
                 <p><i class="far fa-heart"></i></p>
-                <p><i class="fas fa-shopping-cart"></i></p>
-                <!-- les liens sur les icones décalent tout -->
+                <i class="fas fa-shopping-cart" id="cart-icon" data-quantitiy="0"></i>
+
+                <div class="cart">
+                    <h2 class="title_cart">Panier</h2>
+                    <div class="cart-content">
+                        <div class="cart-boite">
+                            <img src="../img/img1.png" alt="" class="cart-img" height="auto" width="150">
+                            <div class="detail-boite">
+                                <div class="cart-product-title">Product Shirt</div>
+                                <div class="cart-prix">50€</div>
+                                <input
+                                    type="number"
+                                    name=""
+                                    id=""
+                                    value="1"
+                                    class="cart-quantitiy"
+                                />
+                                </div>
+                                <i class="fas fa-trash" id="poubelle"></i>
+                            </div>
+                        </div>
+
+                    <div class="total">
+                        <div class="total-titre">Total</div>
+                        <div class="total-prix">O€</div>
+                    </div>
+                    <button type="button" class="btn-acheter">Acheter</button>
+                    <i class="fas fa-door-open" id="porte"></i>
+                    </div>
+                </div>
             </div>
         </nav>
         <!-- Fin barre de navigation -->
         <!-- Barre d'information -->
         <div class="contact">
-            <a href="Nous_rejoindre.html">Nous rejoindre</a>
-            <a href="S'identifier.html">S'identifier</a>
+            <a href="Nous_rejoindre.html">Nous rejoindre &nbsp&nbsp|</a>
+            <a href="S'identifier.html">S'identifier &nbsp&nbsp|</a>
             <a href="Nous_contacter.html">Nous contacter</a>
         </div>
 
         <header>
+            <script src="../js/java.js"></script>
             <!-- éléments en haut de la page -->
             <h1><strong>EXPRIMEZ VOTRE POTENTIEL</strong></h1>
             <p>La collection Calisthetics est arrivée. Faites comme tous nos sportifs et commandez vos produits.</p>

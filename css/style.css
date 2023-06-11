@@ -61,6 +61,145 @@ nav .favoris p{
     top: 32px;
 }
 
+#cart-icon{
+  position: relative;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#cart-icon[data-quantitiy]::after{
+  contain: "";
+}
+
+#cart-icon[data-quantitiy]::after{
+  content: "";
+  position: absolute;
+  top: -9px;
+  right: -12px;
+  width: 20px;
+  height: 20px;
+  background: #B2F5D5;
+  border-radius: 50%;
+  color: #333;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#poubelle {
+  margin-top: -50px;
+  font-size: 20px;
+  color: #0f1011;
+  cursor: pointer;
+}
+
+.cart{
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 360px;
+  min-height: 100vh;
+  padding: 20px;
+  background: #f2f2f2;
+  box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%);
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  z-index: 9999;
+}
+
+.cart.active {
+  right: 0;
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.title_cart{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.total{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid;
+}
+
+.total-titre{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.total-prix{
+  font-size: 1.075rem;
+  margin: 1rem 0 0 0.7rem;
+}
+
+.btn-acheter{
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 20px;
+  width: 50%;
+  text-align: center;
+  border: none;
+  border-radius: 2rem;
+  background: #000;
+  color: #f0f0f0;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#porte{
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 20px;
+  color:#7e7e7e;
+  cursor: pointer;
+}
+
+.cart-boite{
+  display: grid;
+  grid-template-columns: 35% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cart-product-title, .cart-prix{
+  margin-left: 30px;
+  
+}
+
+.cart-product-title {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.cart-prix {
+  font-weight: 500;
+}
+
+.cart-quantitiy {
+  border: 1px solid #000;
+  outline-color: #000;
+  width: 2.8rem;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+
+
+
+
 /* ------------------------------------------------------------------------------------------------- */
 /* HEADER */
 /* petite barre */
@@ -73,22 +212,17 @@ nav .favoris p{
     cursor: pointer;
     font-size: 14px;
     background-color: #f2f2f2;
-    gap: 20px; /* Ajoute un espace de 10 pixels entre les liens */
+    gap: 20px;
+    background: text;
+    
   }
   
   .contact a {
-    display: block;
     color: #333;
     text-decoration: none;
     font-size: 16px;
-    position: relative;
-  }
-  
-  .contact a::before {
-    content: "|";
-    position: absolute;
-    left: -15px; /* Ajustez la position de la barre verticale */
-  }
+    
+  }  
   
   .contact a:first-child::before {
     content: ""; /* Supprime la barre "|" avant le premier lien */
@@ -107,8 +241,6 @@ nav .favoris p{
   .contact a:hover::after {
     transform: scaleX(1);
   }
-  
-  
   
 /* vidéo */
 header .street {
@@ -166,7 +298,7 @@ header button{
     gap: 50px;
     margin-top: 100px;
     justify-content: center; 
-    align-items: center; 
+    align-items: center;
 }
 
 .image-shop a {
@@ -187,7 +319,6 @@ header button{
     color: #C0BFC2;
     text-align: center;
 }
-
 
  /* Inscription à la Newsletter*/
   .newsletter{
@@ -212,15 +343,13 @@ header button{
     font-size: 30px;
   }
 
-
   .email{
     height: 40px;
     justify-content: center;
     display: flex; 
     margin-top: 70px;
-
-
   }
+
   .email i{
     background: #090a0b;
     width: 40px;
@@ -231,13 +360,16 @@ header button{
     border: none;
     outline: none;
   }
+
   .tbox{
     width: 0px;
     transition: 0.6s;
   }
+
   .email:hover > .tbox,.tbox:focus{
     width: 260px;
   }
+
   .btn{
     background: #0f1011;
     color: white;
@@ -249,6 +381,52 @@ header button{
   .marque{
     
   }
+
+  /* Boites articles */
+  .boites{
+    display:flex;
+    flex-wrap:wrap;
+    margin-left: 52px;
+    gap: 35px;
+  }
+
+  .boites .boite{
+    margin-right: 20px;
+    cursor:pointer;
+  }
+
+  .boites .boite img{
+    width: 350px;
+  }
+
+  .boites .boite .boite-head{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+
+  .boites .boite .boite-body p{
+    margin-top: -10px;
+  }
+
+  .ajout-panier{
+    background: #000;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #000;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .ajout-panier:hover{
+    background: hsl(249, 32%, 17%);
+  }
+
+
+
 
 
 

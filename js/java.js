@@ -1,28 +1,12 @@
-const carouselContainer = document.querySelector('.carousel');
-const carouselImages = carouselContainer.querySelectorAll('img');
+var panier = document.querySelector('#cart-icon');
+let cart = document.querySelector('.cart');
+let fermeture = document.querySelector('#porte');
 
-// Clone les images dans le carrousel
-carouselImages.forEach(image => {
-  const clone = image.cloneNode(true);
-  carouselContainer.appendChild(clone);
-});
+panier.onclick = () => {
+    cart.classList.add("active");
+};
 
-let scrollAmount = 0;
-const scrollStep = 3;
-const scrollDelay = 20;
-
-function startCarousel() {
-  carouselContainer.scrollTo(0, 0); // Réinitialise la position du carrousel au début
-  const interval = setInterval(() => {
-    carouselContainer.scrollLeft += scrollStep;
-    scrollAmount += scrollStep;
-    
-    if (scrollAmount >= carouselImages[0].offsetWidth) {
-      clearInterval(interval);
-      startCarousel();
-    }
-  }, scrollDelay);
+fermeture.onclick = () => {
+    cart.classList.remove("active");
 }
 
-// Démarre le carrousel
-startCarousel();
